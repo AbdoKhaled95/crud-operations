@@ -1,0 +1,204 @@
+/*//// general ////*/
+body
+{
+    background-color: #f5f5f5;
+}
+.title .underline
+{
+    width: 5%;
+    height: 10px;
+    left: 0;
+    right: 0;
+}
+.background-img
+{
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.bg-color
+{
+    background-color: rgb(13,110,253,.75);
+
+}
+/* //// genreal end //// */
+
+/* ////// nav ////// */
+nav
+{
+    z-index: 99;
+}
+#nav .links
+{
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 1s;
+    color: white;
+}
+#nav .links:hover
+{
+  text-decoration: underline;
+}
+/* ////// nav end ////// */
+/* ////// header  ////// */
+#header
+{
+    background-image:url(../images/hero-bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#header .intro-title
+{
+    font-size: 72px;
+}
+#header .container .intro h3::after
+{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing
+{
+    0%{content: "|";}
+    2.5%{content: "D|";}
+    5%{content: "Di|";}
+    7.5%{content: "Dis|";}
+    10%{content: "Disg|";}
+    12.5%{content: "Disgn|";}
+    15%{content: "Disgne|";}
+    17.5%{content: "Disgner|";}
+    20%{content: "Disgne|";}
+    22.5%{content: "Disgn|";}
+    25%{content: "Disg|";}
+    27.5%{content: "Dis|";}
+    30%{content: "Di|";}
+    32.5%{content: "D|";}
+    35%{content: "|";}
+    37.5%{content: "|";}
+    40%{content: "F|";}
+    42.5%{content: "Fr|";}
+    45%{content: "Fre|";}
+    47.5%{content: "Free|";}
+    50%{content: "Freel|";}
+    52.5%{content: "Freela|";}
+    55%{content: "Freelan|";}
+    57.5%{content: "Freelanc|";}
+    60%{content: "Freelance|";}
+    62.5%{content: "Freelancer|";}
+    65%{content: "Freelance|";}
+    67.5%{content: "Freelanc|";}
+    70%{content: "Freelan|";}
+    75%{content: "Freela|";}
+    80%{content: "Freel|";}
+    85%{content: "Free|";}
+    90%{content: "Fre|";}
+    95%{content: "Fr|";}
+    99%{content: "F|";}
+    100%{content: "|";}
+}
+@media screen and (max-width:992px) 
+{
+    #header .intro-title
+    {
+        font-size: 45px;
+    }
+}
+/* ////// header end ////// */
+/* ////// about ////// */
+#about .about-info .title-s
+{
+    font-weight:700;
+}
+#about .about-skill .bar
+{
+    height: 10px;
+    background-color: #cde1f8;
+}
+#about .about-skill  .bar .percentage
+{
+    height: 10px;
+}
+#about .about-skill .bar .html
+{
+    width: 85%;
+}
+#about .about-skill .bar .js
+{
+    width: 90%;
+}
+#about .about-summary .about-me
+{
+    line-height: 30px;
+    font-size: 20px;
+    opacity: .7;
+}
+/* ////// about end ////// */
+/* ////// servicces ////// */
+#services .container .services-type .service-icon
+{
+    font-size: 35px;
+    border: 10px rgb(13,110,253) solid;
+    padding: 35px;
+    border-radius: 50%;
+    transition: all .3s;
+}
+#services .container .services-type .service-type:hover .service-icon
+{
+    background-color: rgb(13,110,253);
+    color: white;
+    border-color: #cde1f8;
+}
+#services .services-result
+{
+    background-image: url(../images/counters-bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+/* ////// services end ////// */
+/* ////// work ////// */
+#work .container .works .w-show img
+{
+    transition: all 1s;
+}
+#work .container .works .w-show:hover img
+{
+    transform: scale(1.2);
+}
+#work .slide-button
+{
+    width: 12px;
+    height: 12px;
+}
+/* ////// work end ////// */
+/* //////  blog  ////// */
+#blog .blog-box  .b-title
+{
+    transition: all .5s;
+    text-decoration: none;
+    color: black;
+}
+#blog .blog-box  .b-title:hover
+{
+    color: rgb(13,110,253);
+}
+/* ////// blog end ////// */
+/* ////// contact ////// */
+#contact .socialMedia-icon
+{
+    transition: all .5s;
+    border: 3px solid rgb(13,110,253);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 18px;
+    
+}
+#contact .socialMedia-icon:hover
+{
+    color: white;
+    background-color: rgb(13,110,253);    
+}
+/* ////// contact end ////// */
+
+

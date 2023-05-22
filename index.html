@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div  class="mb-3 w-50 bg-info p-5 m-auto">
+    <label for="fristName">Frist Name</label>
+    <input type="text" class="form-control" id="fristName">
+    <label for="lastName">Last Name</label>
+    <input type="text" class="form-control" id="lastName">
+    <button onclick="sayHello()" class="btn btn-primary mt-4 float-end">Hello</button>
+    <div class="clearfix"></div>
+    <h1>Hello: <span id="demo"></span></h1>
+  </div>
+  <div class=" w-75 bg-info p-5 m-auto">
+    <label for="productName">Porduct Name</label>
+    <input type="text" class="form-control" id="productName">
+    <label for="productPrice">Porduct Price</label>
+    <input type="number" class="form-control" id="productPrices">
+    <label for="productCategory">Porduct Category</label>
+    <input type="text" class="form-control" id="productCategory">
+    <label for="productDescription">Porduct Description</label>
+    <textarea class="form-control" id="productDescription"></textarea>
+    <button id="addBtn" class="btn btn-primary my-4 float-end">Add Product</button>
+    <div class="clearfix"></div>
+    <input onkeyup="search(this.value)" type="text" class="form-control mb-3" placeholder="Search by name .." >
+    <table class="table table-striped">
+      <thead>
+        <th>Porduct Name</th>
+        <th>Porduct Price</th>
+        <th>Porduct Category</th>
+        <th>Porduct Description</th>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+  
+
+  <script src="js/bootstrap.bundle.min.js"></script>   
+  <script src="js/main.js"></script>
+  </body>
+</html>   
